@@ -8,7 +8,7 @@ namespace Dictionaries
     {
         static void Main(string[] args)
         {
-            var input = Console.ReadLine().Split().ToList();
+            var input = Console.ReadLine().Split().Select(x=>x.ToLower()).ToList();
 
             var dict = new Dictionary<string, int>();
 
@@ -20,7 +20,7 @@ namespace Dictionaries
                 }
                 else
                 {
-                    dict.Add(item.ToLower(), 1);
+                    dict.Add(item, 1);
                 }
             }
 
