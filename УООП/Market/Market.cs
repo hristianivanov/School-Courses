@@ -8,7 +8,7 @@ namespace Market
 {
     static class Market
     {
-
+        //without constructor inplementation
         public static List<Product> Products { get; set; } = new List<Product>();
 
         public static void Add(string name, string barcode, double price, double amount)
