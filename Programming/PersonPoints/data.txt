@@ -1,0 +1,5 @@
+S Ivo 19 4,8
+E Mira 35 5
+E Maria 45 12
+S Kalina 16 5,8
+E Pavel 40 18
