@@ -10,6 +10,7 @@ namespace Figures
     {
         static void Main(string[] args)
         {
+            List<Figure> figureList = new List<Figure>();
             using (StreamReader reader = new StreamReader(@"..\..\..\figures.txt"))
             {
                 string line = string.Empty;
@@ -22,28 +23,28 @@ namespace Figures
                     string[] tokens = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                     string type = tokens.First();
                     double size = double.Parse(tokens.Last());
-                    
-                    using (StreamWriter writer = new StreamWriter(@"..\..\..\output.txt",true))
+                    switch (type)
                     {
-                        switch (type)
-                        {
-                            case "Circle":
-                                Circle circle = new Circle(size);
-                                writer.WriteLine($"{circle.GetName()}: Size: {circle.Size} sm, Area: {circle.GetArea():f2} sq sm");
-                                break;
-                            case "EquilateralTriangle":
-                                EquilateralTriangle triangle = new EquilateralTriangle(size);
-                                writer.WriteLine($"{triangle.GetName()}: Size: {triangle.Size} sm, Area: {triangle.GetArea():f2} sq sm");
-                                break;
-                            case "Square":
-                                Square square = new Square(size);
-                                writer.WriteLine($"{square.GetName()}: Size: {square.Size} sm, Area: {square.GetArea():f2} sq sm");
-                                break;
-                        }
-
+                        case "Circle":
+                            Circle circle = new Circle(size);
+                            figureList.Add(circle);
+                            break;
+                        case "EquilateralTriangle":
+                            EquilateralTriangle triangle = new EquilateralTriangle(size);
+                            figureList.Add(triangle);
+                            break;
+                        case "Square":
+                            Square square = new Square(size);
+                            figureList.Add(square);
+                            break;
                     }
                 }
             }
+            using (StreamWriter writer = new StreamWriter(@"..\..\..\output.txt", true))
+            {
+                figureList.ForEach(figure => writer.WriteLine($"{figure.GetName()}: Size: {figure.Size} sm, Area: {figure.GetArea():f2} sq sm"));
+            }
+
         }
     }
 }
