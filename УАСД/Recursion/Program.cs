@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 
 namespace Recursion
@@ -77,15 +78,28 @@ namespace Recursion
             return result;
         }
 
+        private static void ReverseAndPyramidPrint(int num)
+        {
+            if (num == 0)
+                return;
+            int copy = num;
+            while (copy != 0)
+            {
+                Console.Write(copy % 10);
+                copy /= 10;
+            }
+            Console.WriteLine();
+            ReverseAndPyramidPrint(num.ToString().Length > 1 ? RemoveFirstDigit(num) : num=0) ;
+        }
+
+        private static int RemoveFirstDigit(int num)
+        {
+            return int.Parse(num.ToString().Substring(1));
+        }
+
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-
-
-
-
-
-
 
         }
     }
