@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.Delivery Company", "Deliv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop", "Shop\Shop.csproj", "{2392A923-F79A-4A00-80A7-40AD6C28DCF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparingObjects", "ComparingObjects\ComparingObjects.csproj", "{3B16D02D-9D72-4974-B10A-C57F5790461B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparingObjects", "ComparingObjects\ComparingObjects.csproj", "{3B16D02D-9D72-4974-B10A-C57F5790461B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stealer", "Stealer\Stealer.csproj", "{B3189FF6-F2CB-4BFB-A96B-CF573B269DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stealer", "Stealer\Stealer.csproj", "{B3189FF6-F2CB-4BFB-A96B-CF573B269DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionDemos", "ReflectionDemos\ReflectionDemos.csproj", "{769F8F77-D509-4BDA-865D-8DB9D12BBDB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B3189FF6-F2CB-4BFB-A96B-CF573B269DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3189FF6-F2CB-4BFB-A96B-CF573B269DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3189FF6-F2CB-4BFB-A96B-CF573B269DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769F8F77-D509-4BDA-865D-8DB9D12BBDB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769F8F77-D509-4BDA-865D-8DB9D12BBDB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769F8F77-D509-4BDA-865D-8DB9D12BBDB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769F8F77-D509-4BDA-865D-8DB9D12BBDB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
