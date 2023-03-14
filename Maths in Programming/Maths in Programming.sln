@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMethods", "MatrixMethods\MatrixMethods.csproj", "{758DB76D-3D11-454D-A267-B4650CA195CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatrixMethods", "MatrixMethods\MatrixMethods.csproj", "{758DB76D-3D11-454D-A267-B4650CA195CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demos", "demos\demos.csproj", "{BFA5EE17-AC3A-4611-ADFD-312B392FCA92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{758DB76D-3D11-454D-A267-B4650CA195CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{758DB76D-3D11-454D-A267-B4650CA195CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{758DB76D-3D11-454D-A267-B4650CA195CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA5EE17-AC3A-4611-ADFD-312B392FCA92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA5EE17-AC3A-4611-ADFD-312B392FCA92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA5EE17-AC3A-4611-ADFD-312B392FCA92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA5EE17-AC3A-4611-ADFD-312B392FCA92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
