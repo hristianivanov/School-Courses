@@ -1,19 +1,22 @@
-﻿namespace MatrixMethods
+﻿using Microsoft.VisualBasic;
+using System.Numerics;
+
+namespace MatrixMethods
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            double[,] nums = new double[3, 3]
-            {
-               { 2, -1,  1 },
-               { 3,  1, -1 },
-               { 1,  2,  1 }
-            };
-            Console.WriteLine(string.Join(" ",SolveMatrixFromThirdRowWithKramerMethod(nums)));
-
+            double[,] matrix = new double[4, 4]
+        {
+                {1, 2, -2, 3},
+                {-1, 1, 0, 2},
+                {3, -3, 4, 1},
+                {2, 1, 1, -2}
+        };
+            Console.WriteLine(string.Join(" ", SolveMatrixFromFourthRowWithKramerMethod(matrix, new double[] { 2, -3, 16, 9 })));
         }
-        public static double[] SolveMatrixFromThirdRowWithKramerMethod(double[,] matrix)
+        private static double[] SolveMatrixFromThirdRowWithKramerMethod(double[,] matrix)
         {
             int n = matrix.GetLength(0);
             double[] result = new double[n];
@@ -32,6 +35,36 @@
 
             return result;
         }
+        private static double[] SolveMatrixFromFourthRowWithKramerMethod(double[,] matrix, double[] constants)
+        {
+            double detMainMatrix = DeterminantFromFourthRow(matrix);
+
+            if (detMainMatrix == 0)
+                throw new ArgumentException("The matrix has no unique solution.");
+
+            double[] detCoefficients = new double[4];
+
+            for (int i = 0; i < 4; i++)
+                detCoefficients[i] = DeterminantFromFourthRow(ChangeMatrix(matrix, constants, i));
+
+            double[] solutions = new double[4];
+            for (int i = 0; i < 4; i++)
+                solutions[i] = detCoefficients[i] / detMainMatrix;
+
+            return solutions.Select(x => Math.Round(x)).ToArray();
+        }
+        private static double[,] ChangeMatrix(double[,] matrix, double[] constants, int col)
+        {
+            if (constants.Length != matrix.GetLength(1))
+                throw new InvalidOperationException();
+
+            double[,] newMatrix = CopyMatrix(matrix);
+
+            for (int row = 0; row < matrix.GetLength(0); row++)
+                newMatrix[row, col] = constants[row];
+
+            return newMatrix;
+        }
         private static double[,] CopyMatrix(double[,] matrix)
         {
             int n = matrix.GetLength(0);
@@ -44,7 +77,6 @@
             }
             return result;
         }
-
         private static int[,] CreateMatrix(int n)
         {
             int[,] matrix = new int[n, n];
@@ -60,8 +92,7 @@
             }
             return matrix;
         }
-
-        private static void PrintMatrix(int[,] matrix)
+        private static void PrintMatrix(double[,] matrix)
         {
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
@@ -70,10 +101,10 @@
                 Console.WriteLine();
             }
         }
-        private static int[,] SubMatrix(int[,] matrix, int x, int y)
+        private static double[,] SubMatrix(double[,] matrix, int x, int y)
         {
             int size = matrix.GetLength(0) - 1;
-            int[,] newMatrix = new int[size, size];
+            double[,] newMatrix = new double[size, size];
             int newRow = 0, newCol = 0;
             for (int row = 0; row < matrix.GetLength(0); row++)
             {
@@ -106,9 +137,36 @@
             }
             return det;
         }
-        private static double DeterminantFromFourthRow(double[,] matrix)
+        public static double DeterminantFromFourthRow(double[,] matrix)
         {
+            double det = 0;
+            int n = matrix.GetLength(0);
 
+            if (n == 1)
+                det = matrix[0, 0];
+            else if (n == 2)
+                det = matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
+            else
+            {
+                for (int i = 0; i < n; i++)
+                {
+                    double[,] submatrix = new double[n - 1, n - 1];
+                    for (int j = 1; j < n; j++)
+                    {
+                        for (int k = 0, m = 0; k < n; k++)
+                        {
+                            if (k == i)
+                                continue;
+
+                            submatrix[j - 1, m] = matrix[j, k];
+                            m++;
+                        }
+                    }
+                    double sign = (i % 2 == 0) ? 1 : -1;
+                    det += sign * matrix[0, i] * DeterminantFromFourthRow(submatrix);
+                }
+            }
+            return det;
         }
     }
 }

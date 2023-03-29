@@ -25,14 +25,14 @@ namespace Clothes
             {
                 using SqlConnection conn = new SqlConnection(Config.ConnectionString);
                 conn.Open();
-                string query = "UPDATE products SET price = price * 0.75";
-                using SqlCommand command = new SqlCommand(query, conn);
+                using SqlCommand command = new SqlCommand(SqlQueries.SetTwentyFivePercentSale, conn);
                 int rowsAffected = command.ExecuteNonQuery();
                 using SqlDataReader reader = command.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);
                 dataGridView1.Visible = true;
                 dataGridView1.DataSource = table;
+
                 MessageBox.Show($"{rowsAffected} rows updated successfully.");
             }
             catch (Exception ex)
@@ -166,8 +166,7 @@ namespace Clothes
             {
                 using SqlConnection conn = new SqlConnection(Config.ConnectionString);
                 conn.Open();
-                string query = "SELECT [name], [price] FROM products ORDER BY [name]";
-                using SqlCommand command = new SqlCommand(query, conn);
+                SqlCommand command = new SqlCommand(SqlQueries.ShowProductPrice, conn);
                 using SqlDataReader reader = command.ExecuteReader();
                 DataTable table = new DataTable();
                 table.Load(reader);
@@ -187,30 +186,8 @@ namespace Clothes
 
         private void chooseToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DateTime dateTime = dateTimePicker1.Value;
-            try
-            {
-                string query = "SELECT u.username FROM orders AS o " +
-                               "LEFT JOIN users AS u ON u.id = o.user_id " +
-                               "WHERE o.order_date > @date";
-
-                using (SqlConnection connection = new SqlConnection(Config.ConnectionString))
-                {
-                    SqlCommand command = new SqlCommand(query, connection);
-                    SqlParameter dateParam = new SqlParameter("@date", SqlDbType.DateTime);
-                    dateParam.Value = dateTime;
-                    command.Parameters.Add(dateParam);
-                    connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
-                    DataTable table = new DataTable();
-                    table.Load(reader);
-                    dataGridView1.DataSource = table;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error: " + ex.Message);
-            }
+            Form3 form3 = new Form3();
+            form3.ShowDialog();
         }
 
         private void resetToolStripMenuItem_Click(object sender, EventArgs e)
@@ -219,19 +196,7 @@ namespace Clothes
             {
                 using SqlConnection conn = new SqlConnection(Config.ConnectionString);
                 conn.Open();
-                string query = "UPDATE products SET price = 49.99 WHERE id = 1 " +
-                    "UPDATE products SET price = 15.99 WHERE id = 2" +
-                    "UPDATE products SET price = 59.99 WHERE id = 3" +
-                    "UPDATE products SET price = 24.99 WHERE id = 4" +
-                    "UPDATE products SET price = 39.99 WHERE id = 5" +
-                    "UPDATE products SET price = 49.99 WHERE id = 6" +
-                    "UPDATE products SET price = 119.99 WHERE id = 7" +
-                    "UPDATE products SET price = 14.99 WHERE id = 8" +
-                    "UPDATE products SET price = 39.99 WHERE id = 9" +
-                    "UPDATE products SET price = 29.99 WHERE id = 10" +
-                    "UPDATE products SET price = 34.99 WHERE id = 11" +
-                    "UPDATE products SET price = 49.99 WHERE id = 12";
-                using SqlCommand command = new SqlCommand(query, conn);
+                SqlCommand command = new SqlCommand(SqlQueries.ResetPrices, conn);
                 command.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -244,16 +209,12 @@ namespace Clothes
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(Config.ConnectionString))
-                {
-                    conn.Open();
-                    string query = "UPDATE products SET price = price * 0.5";
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        int rowsAffected = command.ExecuteNonQuery();
-                        MessageBox.Show($"{rowsAffected} rows updated successfully.");
-                    }
-                }
+                using SqlConnection conn = new SqlConnection(Config.ConnectionString);
+                conn.Open();
+                SqlCommand command = new SqlCommand(SqlQueries.SetFiftyPercentSale, conn);
+                int rowsAffected = command.ExecuteNonQuery();
+
+                MessageBox.Show($"{rowsAffected} rows updated successfully.");
             }
             catch (Exception ex)
             {
@@ -266,16 +227,12 @@ namespace Clothes
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(Config.ConnectionString))
-                {
-                    conn.Open();
-                    string query = "UPDATE products SET price = price * 0.4";
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        int rowsAffected = command.ExecuteNonQuery();
-                        MessageBox.Show($"{rowsAffected} rows updated successfully.");
-                    }
-                }
+                using SqlConnection conn = new SqlConnection(Config.ConnectionString);
+                conn.Open();
+                using SqlCommand command = new SqlCommand(SqlQueries.SetSixtyPercentSale, conn);
+                int rowsAffected = command.ExecuteNonQuery();
+
+                MessageBox.Show($"{rowsAffected} rows updated successfully.");
             }
             catch (Exception ex)
             {
@@ -287,16 +244,12 @@ namespace Clothes
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(Config.ConnectionString))
-                {
-                    conn.Open();
-                    string query = "UPDATE products SET price = price * 0.3";
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        int rowsAffected = command.ExecuteNonQuery();
-                        MessageBox.Show($"{rowsAffected} rows updated successfully.");
-                    }
-                }
+                using SqlConnection conn = new SqlConnection(Config.ConnectionString);
+                conn.Open();
+                SqlCommand command = new SqlCommand(SqlQueries.SetSeventyPercentSale, conn);
+                int rowsAffected = command.ExecuteNonQuery();
+
+                MessageBox.Show($"{rowsAffected} rows updated successfully.");
             }
             catch (Exception ex)
             {
@@ -308,20 +261,13 @@ namespace Clothes
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(Config.ConnectionString))
-                {
-                    conn.Open();
-                    string query = "SELECT username,email FROM users";
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        using (SqlDataAdapter adapter = new SqlDataAdapter(command))
-                        {
-                            DataTable table = new DataTable();
-                            adapter.Fill(table);
-                            dataGridView1.DataSource = table;
-                        }
-                    }
-                }
+                using SqlConnection conn = new SqlConnection(Config.ConnectionString);
+                conn.Open();
+                SqlCommand command = new SqlCommand(SqlQueries.ShowAllUsers, conn);
+                using SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
             }
             catch (Exception ex)
             {
@@ -332,7 +278,27 @@ namespace Clothes
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Visible = true;
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+        }
+
+        private void productSizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using SqlConnection conn = new SqlConnection(Config.ConnectionString);
+                conn.Open(); 
+                using SqlCommand command = new SqlCommand(SqlQueries.ShowProductSizes, conn);
+                using SqlDataReader reader = command.ExecuteReader();
+                DataTable table = new DataTable();
+                table.Load(reader);
+                dataGridView1.Visible = true;
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

@@ -4,37 +4,37 @@
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine(
-            //    Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries)
-            //    .Select(int.Parse)
-            //    .Where(x => x > 50)
-            //    .Sum() 
-            //    );
+            Console.WriteLine(
+                Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .Where(x => x > 50)
+                .Sum()
+                );
 
-            //Console.WriteLine( string.Join( ", ", 
-            //    Console.ReadLine().Split(", ",StringSplitOptions.RemoveEmptyEntries)
-            //    .Select(int.Parse)
-            //    .Where(x => x % 2 == 0)
-            //    .OrderBy(x => x)
-            //    .ToArray()
-            //    ));
+            Console.WriteLine(string.Join(", ",
+                Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .Where(x => x % 2 == 0)
+                .OrderBy(x => x)
+                .ToArray()
+                ));
 
-            //List<int> nums = Console.ReadLine()
-            //     .Split(", ", StringSplitOptions.RemoveEmptyEntries)
-            //     .Select(int.Parse)
-            //     .ToList();
-            //Console.WriteLine(nums.Count(x => x % 2 == 0));
-            //Console.WriteLine(nums.Count(x => x % 2 != 0));
+            List<int> nums = Console.ReadLine()
+                 .Split(", ", StringSplitOptions.RemoveEmptyEntries)
+                 .Select(int.Parse)
+                 .ToList();
+            Console.WriteLine(nums.Count(x => x % 2 == 0));
+            Console.WriteLine(nums.Count(x => x % 2 != 0));
 
-            //string[] strings = Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries);
-            //Console.WriteLine(string.Join(" ", strings.Where(x=> char.IsUpper(x[0]))));
+            string[] strings = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            Console.WriteLine(string.Join(" ", strings.Where(x => char.IsUpper(x[0]))));
 
-            //Console.WriteLine(string.Join(Environment.NewLine,
-            //    Console.ReadLine()
-            //    .Split(", ", StringSplitOptions.RemoveEmptyEntries)
-            //    .Select(decimal.Parse)
-            //    .Select(x=> (x* 1.2M).ToString("F2"))
-            //    ));
+            Console.WriteLine(string.Join(Environment.NewLine,
+                Console.ReadLine()
+                .Split(", ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(decimal.Parse)
+                .Select(x => (x * 1.2M).ToString("F2"))
+                ));
 
 
             List<Person> people = ReadPeople();
@@ -47,13 +47,13 @@
             PrintPeople(matchingPeople, printPerson);
         }
 
-        static void PrintPeople(List<Person> people, Action<Person> printerPerson)
+        private static void PrintPeople(List<Person> people, Action<Person> printerPerson)
         {
             foreach (var person in people)
                 printerPerson(person);
         }
 
-        static Action<Person> CreatePersonPrinter(string format)
+        private static Action<Person> CreatePersonPrinter(string format)
         {
             if (format == "name age")
                 return p => Console.WriteLine($"{p.Name} - {p.Age}");
@@ -65,8 +65,7 @@
             throw new ArgumentException("Invalid: " + format);
         }
 
-        static Func<Person, bool> CreatePersonFilter
-           (string condition, int ageThreshold)
+        private static Func<Person, bool> CreatePersonFilter(string condition, int ageThreshold)
         {
             if (condition == "older")
                 return p => p.Age >= ageThreshold;
@@ -75,7 +74,7 @@
 
             throw new ArgumentException($"Invalid filter: {condition} {ageThreshold}");
         }
-        static List<Person> ReadPeople()
+        private static List<Person> ReadPeople()
         {
             int n = int.Parse(Console.ReadLine());
 

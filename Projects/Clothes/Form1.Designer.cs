@@ -53,9 +53,8 @@
             productPriceToolStripMenuItem = new ToolStripMenuItem();
             resetToolStripMenuItem = new ToolStripMenuItem();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
+            productSizeToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -64,7 +63,7 @@
             // 
             richTextBox1.BackColor = SystemColors.ScrollBar;
             richTextBox1.ForeColor = SystemColors.ActiveCaptionText;
-            richTextBox1.Location = new Point(533, 131);
+            richTextBox1.Location = new Point(552, 95);
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(433, 419);
             richTextBox1.TabIndex = 0;
@@ -181,14 +180,14 @@
             // showAllToolStripMenuItem
             // 
             showAllToolStripMenuItem.Name = "showAllToolStripMenuItem";
-            showAllToolStripMenuItem.Size = new Size(224, 26);
+            showAllToolStripMenuItem.Size = new Size(150, 26);
             showAllToolStripMenuItem.Text = "Show All";
             showAllToolStripMenuItem.Click += showAllToolStripMenuItem_Click;
             // 
             // searchToolStripMenuItem
             // 
             searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            searchToolStripMenuItem.Size = new Size(224, 26);
+            searchToolStripMenuItem.Size = new Size(150, 26);
             searchToolStripMenuItem.Text = "Search";
             searchToolStripMenuItem.Click += searchToolStripMenuItem_Click;
             // 
@@ -208,7 +207,7 @@
             // 
             // showToolStripMenuItem
             // 
-            showToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { productPriceToolStripMenuItem });
+            showToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { productPriceToolStripMenuItem, productSizeToolStripMenuItem });
             showToolStripMenuItem.Name = "showToolStripMenuItem";
             showToolStripMenuItem.Size = new Size(59, 24);
             showToolStripMenuItem.Text = "Show";
@@ -216,7 +215,7 @@
             // productPriceToolStripMenuItem
             // 
             productPriceToolStripMenuItem.Name = "productPriceToolStripMenuItem";
-            productPriceToolStripMenuItem.Size = new Size(209, 26);
+            productPriceToolStripMenuItem.Size = new Size(224, 26);
             productPriceToolStripMenuItem.Text = "Product  --> Price";
             productPriceToolStripMenuItem.Click += productPriceToolStripMenuItem_Click;
             // 
@@ -233,32 +232,23 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Location = new Point(479, 61);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(261, 27);
-            dateTimePicker1.TabIndex = 3;
-            dateTimePicker1.Visible = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(76, 61);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(238, 27);
-            textBox1.TabIndex = 4;
-            textBox1.Visible = false;
-            // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(35, 131);
+            dataGridView1.Location = new Point(75, 95);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(414, 419);
             dataGridView1.TabIndex = 5;
+            // 
+            // productSizeToolStripMenuItem
+            // 
+            productSizeToolStripMenuItem.Name = "productSizeToolStripMenuItem";
+            productSizeToolStripMenuItem.Size = new Size(224, 26);
+            productSizeToolStripMenuItem.Text = "Product ---> Size";
+            productSizeToolStripMenuItem.Click += productSizeToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -267,8 +257,6 @@
             BackColor = SystemColors.ActiveBorder;
             ClientSize = new Size(1039, 582);
             Controls.Add(dataGridView1);
-            Controls.Add(textBox1);
-            Controls.Add(dateTimePicker1);
             Controls.Add(richTextBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -304,12 +292,11 @@
         private ToolStripMenuItem showAllToolStripMenuItem;
         private ToolStripMenuItem searchToolStripMenuItem;
         private ToolStripMenuItem dateToolStripMenuItem;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox1;
         private ToolStripMenuItem showToolStripMenuItem;
         private ToolStripMenuItem productPriceToolStripMenuItem;
         private DataGridView dataGridView1;
         private ToolStripMenuItem chooseToolStripMenuItem;
         private ToolStripMenuItem resetToolStripMenuItem;
+        private ToolStripMenuItem productSizeToolStripMenuItem;
     }
 }
