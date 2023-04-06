@@ -2,7 +2,7 @@
 
 public class Statistic
 {
-    public event EventHandler<MyEventArgs> MyEvent = null!;
+    public event EventHandler<MyEventArgs> Calculating = null!;
     public event EventHandler<NumberCheckedEventArgs> NumberChecking = null!;
     private int number;
 
@@ -28,6 +28,6 @@ public class Statistic
         int max = nums.Max();
         double average = nums.Average();
         int sum = nums.Sum();
-        MyEvent!.Invoke(this, new MyEventArgs(min, max, average, sum));
+        Calculating!.Invoke(this, new MyEventArgs(min, max, average, sum));
     }
 }

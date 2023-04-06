@@ -2,18 +2,31 @@
 {
     public class Program
     {
-        //public delegate void EventHandler(object obj, EventArgs e);
         static void Main(string[] args)
         {
-            Statistic statistic = new Statistic();
+            BankAccount account = new BankAccount("1234567890");
 
-            // first event
-            int[] nums = { 1, 2, 3, 4, 5, 6 };
-            statistic.MyEvent += PrintMethod!;
-            statistic.Calculate(nums);
-            
+            account.TransactionMade += (sender, transaction) =>
+            {
+                Console.WriteLine($"Transaction: {transaction.TransactionType}, Amount: {transaction.Amount}, Date: {transaction.Date}");
+            };
 
-            //second event
+            account.Deposit(1000);
+            account.Withdraw(500);
+            account.Deposit(2000);
+        }
+
+        private static void ThirdEvent(Statistic statistic)
+        {
+            statistic.NumberChecking += OnNumberChecked!;
+
+            Console.Write("Type number: ");
+            int number = int.Parse(Console.ReadLine()!);
+            statistic.Number = number;
+        }
+
+        private static void SecondEvent()
+        {
             for (int i = 0; i < 2; i++)
             {
                 string[] input = Console.ReadLine()
@@ -26,14 +39,15 @@
                 person.PersonCreated += PrintPersonsInfo!;
                 person.OnPersonCreated();
             }
-
-            //third event
-            statistic.NumberChecking += OnNumberChecked!;
-
-            Console.Write("Type number: ");
-            int number = int.Parse(Console.ReadLine()!);
-            statistic.Number = number;
         }
+
+        private static void FirstEvent(Statistic statistic)
+        {
+            int[] nums = { 1, 2, 3, 4, 5, 6 };
+            statistic.Calculating += PrintMethod!;
+            statistic.Calculate(nums);
+        }
+
         private static void PrintPersonsInfo(object sender, PersonEventArgs e)
         {
             Console.WriteLine($"Created a new person with name {e.Name} and age {e.Age}");
