@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events\Events.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomEventHandler", "CustomEventHandler\CustomEventHandler.csproj", "{2F91D2E2-73D1-4A5E-AC13-584E5848FA81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionsHandling", "ExceptionsHandling\ExceptionsHandling.csproj", "{8A019E45-44E0-4651-BCEC-4438FEACA680}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionsHandling", "ExceptionsHandling\ExceptionsHandling.csproj", "{8A019E45-44E0-4651-BCEC-4438FEACA680}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStreams", "FileStreams\FileStreams.csproj", "{F4355599-A410-4A56-A8FC-BEA0208A78A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{8A019E45-44E0-4651-BCEC-4438FEACA680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A019E45-44E0-4651-BCEC-4438FEACA680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A019E45-44E0-4651-BCEC-4438FEACA680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4355599-A410-4A56-A8FC-BEA0208A78A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4355599-A410-4A56-A8FC-BEA0208A78A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4355599-A410-4A56-A8FC-BEA0208A78A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4355599-A410-4A56-A8FC-BEA0208A78A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
