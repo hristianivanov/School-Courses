@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{5B79EC11-6513-4998-B327-F5A6E9938334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Egyptic Num", "Egyptic Num\Egyptic Num.csproj", "{A7DF0215-6F51-4051-9BAB-12EED25ED596}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interval Scheduling", "Interval Scheduling\Interval Scheduling.csproj", "{47AD87C6-951D-4620-8DE7-6FB670808B73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coin Task", "Coin Task\Coin Task.csproj", "{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B79EC11-6513-4998-B327-F5A6E9938334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B79EC11-6513-4998-B327-F5A6E9938334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B79EC11-6513-4998-B327-F5A6E9938334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B79EC11-6513-4998-B327-F5A6E9938334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DF0215-6F51-4051-9BAB-12EED25ED596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DF0215-6F51-4051-9BAB-12EED25ED596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DF0215-6F51-4051-9BAB-12EED25ED596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DF0215-6F51-4051-9BAB-12EED25ED596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47AD87C6-951D-4620-8DE7-6FB670808B73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AD87C6-951D-4620-8DE7-6FB670808B73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AD87C6-951D-4620-8DE7-6FB670808B73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AD87C6-951D-4620-8DE7-6FB670808B73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F11C9005-FF10-4A4B-A2ED-40DB6A66E904}
+	EndGlobalSection
+EndGlobal
