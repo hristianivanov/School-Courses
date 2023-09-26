@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Egyptic Num", "Egyptic Num\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interval Scheduling", "Interval Scheduling\Interval Scheduling.csproj", "{47AD87C6-951D-4620-8DE7-6FB670808B73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coin Task", "Coin Task\Coin Task.csproj", "{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coin Task", "Coin Task\Coin Task.csproj", "{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bag Thief", "Bag Thief\Bag Thief.csproj", "{8CD86824-C3BF-4D62-AAE9-C9F9F2CA4880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Majorant Task", "Majorant Task\Majorant Task.csproj", "{69883068-8C52-41FE-B093-44D3C0E8FDFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0477526D-C7A0-4622-8CF6-5D1B48ED77F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD86824-C3BF-4D62-AAE9-C9F9F2CA4880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD86824-C3BF-4D62-AAE9-C9F9F2CA4880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD86824-C3BF-4D62-AAE9-C9F9F2CA4880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD86824-C3BF-4D62-AAE9-C9F9F2CA4880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69883068-8C52-41FE-B093-44D3C0E8FDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69883068-8C52-41FE-B093-44D3C0E8FDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69883068-8C52-41FE-B093-44D3C0E8FDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69883068-8C52-41FE-B093-44D3C0E8FDFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -19,12 +19,12 @@
 
 			List<Tuple<int, int>> selectedIntervals = ScheduleIntervals(intervals);
 
-			Console.WriteLine("Selected Intervals:");
+			Console.WriteLine($"Selected Intervals {selectedIntervals.Count} :");
 			foreach (var interval in selectedIntervals)
 			{
 				Console.WriteLine($"({interval.Item1}, {interval.Item2})");
 			}
-		}
+        }
 
         static List<Tuple<int, int>> ScheduleIntervals(Tuple<int, int>[] intervals)
         {
