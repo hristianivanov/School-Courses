@@ -101,6 +101,7 @@ namespace Recursion
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+            ReverseAndPyramidPrint(59494);
         }
     }
 }
