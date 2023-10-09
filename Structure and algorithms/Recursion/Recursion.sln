@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find max number in array", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked list", "Linked list\Linked list.csproj", "{C801EAE3-6A9C-471D-88C7-3FEED8B83282}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge sort", "Merge sort\Merge sort.csproj", "{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{C801EAE3-6A9C-471D-88C7-3FEED8B83282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C801EAE3-6A9C-471D-88C7-3FEED8B83282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C801EAE3-6A9C-471D-88C7-3FEED8B83282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
