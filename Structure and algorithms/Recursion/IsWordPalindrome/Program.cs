@@ -4,8 +4,8 @@
 	{
 		static void Main(string[] args)
 		{
-            Console.WriteLine(IsPalindrome("abcba"));
-        }
+
+		}
 
 		private static bool IsPalindrome(string word)
 		{
