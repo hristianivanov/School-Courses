@@ -29,11 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse array", "Reverse ar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsWordPalindrome", "IsWordPalindrome\IsWordPalindrome.csproj", "{98DABAC8-67CA-4354-8649-4FD242EDF92D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Find max number in array", "Find max number in array\Find max number in array.csproj", "{7915B6E3-A3B5-4BCA-89EB-5D33D563C436}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Find max number in array", "Find max number in array\Find max number in array.csproj", "{7915B6E3-A3B5-4BCA-89EB-5D33D563C436}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linked list", "Linked list\Linked list.csproj", "{C801EAE3-6A9C-471D-88C7-3FEED8B83282}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linked list", "Linked list\Linked list.csproj", "{C801EAE3-6A9C-471D-88C7-3FEED8B83282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Merge sort", "Merge sort\Merge sort.csproj", "{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Merge sort", "Merge sort\Merge sort.csproj", "{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quick sort", "Quick sort\Quick sort.csproj", "{81757C27-5579-4B27-8181-7CF86913DEF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2DF3846-68D7-4099-9526-3FFD7C2E3DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81757C27-5579-4B27-8181-7CF86913DEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81757C27-5579-4B27-8181-7CF86913DEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81757C27-5579-4B27-8181-7CF86913DEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81757C27-5579-4B27-8181-7CF86913DEF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
