@@ -24,7 +24,7 @@
 		{
 			int pivot = nums[right];
 
-			int i  = left;
+			int i = left;
 
 			for (int j = left; j < right; j++)
 			{
