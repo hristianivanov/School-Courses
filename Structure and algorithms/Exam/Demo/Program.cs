@@ -4,27 +4,17 @@
 	{
 		static void Main(string[] args)
 		{
-			// abcba -> True
-			// bor -> False
+			int n = 6;
 
-			string input = "abcba";
-
-			bool result = IsPalindrome(input);
-
-			Console.WriteLine(result);
+			DrawStars(n);
 		}
 
-		private static bool IsPalindrome(string word)
+		static void DrawStars(int n)
 		{
-			if (word.Length == 1) 
-				return true;
-
-			if (word[0] != word[word.Length - 1])
-				return false;
-
-			string remainingLetters = word.Substring(1, word.Length - 2);
-
-			return IsPalindrome(remainingLetters);
+			if (n <= 0)
+				return;
+			DrawStars(n - 1);
+			Console.WriteLine(new string('*', n));
 		}
 	}
 }
