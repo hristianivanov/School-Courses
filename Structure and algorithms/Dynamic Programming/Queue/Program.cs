@@ -4,12 +4,12 @@
 	{
 		static void Main(string[] args)
 		{
-			List<int> times = Console.ReadLine()
+			List<int> times = Console.ReadLine()!
 				.Split(" ")
 				.Select(int.Parse)
 				.ToList();
 
-			List<int> combination = Console.ReadLine()
+			List<int> combination = Console.ReadLine()!
 				.Split(" ")
 				.Select(int.Parse)
 				.ToList();
