@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coin problem", "Coin problem\Coin problem.csproj", "{626A79C9-7198-47F4-8291-87D6455B3BD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coin problem", "Coin problem\Coin problem.csproj", "{626A79C9-7198-47F4-8291-87D6455B3BD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knapsack", "Knapsack\Knapsack.csproj", "{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intervals Scheduling", "Intervals Scheduling\Intervals Scheduling.csproj", "{7DDF2A42-508A-4873-BF71-3B9635595174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonaci numbers", "Fibonaci numbers\Fibonaci numbers.csproj", "{0A95FE04-BEF8-4B13-8ACC-3232EE839617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{55C31DFE-2CE5-4648-8D08-E46C3289C8D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{626A79C9-7198-47F4-8291-87D6455B3BD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{626A79C9-7198-47F4-8291-87D6455B3BD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{626A79C9-7198-47F4-8291-87D6455B3BD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DDF2A42-508A-4873-BF71-3B9635595174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DDF2A42-508A-4873-BF71-3B9635595174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DDF2A42-508A-4873-BF71-3B9635595174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DDF2A42-508A-4873-BF71-3B9635595174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A95FE04-BEF8-4B13-8ACC-3232EE839617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A95FE04-BEF8-4B13-8ACC-3232EE839617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A95FE04-BEF8-4B13-8ACC-3232EE839617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A95FE04-BEF8-4B13-8ACC-3232EE839617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55C31DFE-2CE5-4648-8D08-E46C3289C8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55C31DFE-2CE5-4648-8D08-E46C3289C8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55C31DFE-2CE5-4648-8D08-E46C3289C8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55C31DFE-2CE5-4648-8D08-E46C3289C8D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
