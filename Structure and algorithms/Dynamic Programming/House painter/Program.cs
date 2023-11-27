@@ -10,9 +10,9 @@
 			var green = new int[] { 1, 2, 6 };
 			var blue = new int[] { 6, 1, 3 };
 
-			var rHouse = new int[red.Length - 1];
-			var gHouse = new int[green.Length - 1];
-			var bHouse = new int[blue.Length - 1];
+			var rHouse = new int[red.Length];
+			var gHouse = new int[green.Length];
+			var bHouse = new int[blue.Length];
 
 			rHouse[0] = red[0];
 			gHouse[0] = green[0];
