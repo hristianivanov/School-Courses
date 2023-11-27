@@ -21,8 +21,8 @@
 			for (int i = 1; i < n; i++)
 			{
 				rHouse[i] = Math.Min(gHouse[i - 1], bHouse[i - 1]) + red[i];
-				bHouse[i] = Math.Min(gHouse[i - 1], rHouse[i - 1]) + blue[i];
 				gHouse[i] = Math.Min(rHouse[i - 1], bHouse[i - 1]) + green[i];
+				bHouse[i] = Math.Min(gHouse[i - 1], rHouse[i - 1]) + blue[i];
 			}
 
 			var optPr = Math.Min(rHouse[rHouse.Length - 1], Math.Min(bHouse[bHouse.Length - 1], gHouse[gHouse.Length - 1]));
