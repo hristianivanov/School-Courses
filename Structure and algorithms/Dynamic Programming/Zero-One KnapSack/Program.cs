@@ -4,16 +4,14 @@
 	{
 		static void Main(string[] args)
 		{
-			//0 -> 1
 			var items = new List<Item>()
 			{
-				new Item(10, 55),
-				new Item(6, 25),
-				new Item(4, 15),
-				new Item(9, 10),
+				new Item(10,120),
+				new Item(20, 100),
+				new Item(30,500),
 			};
 
-			int W = 16; // Knapsack capacity
+			int W = 50; // Knapsack capacity
 			int n = items.Count;
 
 			var matrix = new int[n + 1, W + 1];

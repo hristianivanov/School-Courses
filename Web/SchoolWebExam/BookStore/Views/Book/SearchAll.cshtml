@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model BookStore.ViewModels.Book.SearchViewModel
+@{
+	ViewBag.Title = "Search books:";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+
+<ul>
+	<li><a asp-area="" asp-controller="Book" asp-action="MaxBookPrice">Maximum price book</a></li>
+	<li><a asp-area="" asp-controller="Book" asp-action="AuthorBook">Dan Brown</a></li>
+</ul>
+
+<style>
+	h2 {
+		text-decoration: underline;
+	}
+</style>

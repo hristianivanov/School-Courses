@@ -4,7 +4,9 @@
 	{
 		static void Main(string[] args)
 		{
-			var nums = new int[] { -5, 0, -2, -10, 1, 15, 25, 6 };
+			#region 1
+
+			var nums = new int[] { -5, 0, -2, -10, 1, 15, 25 };
 
 			var sets = new int[nums.Length];
 
@@ -21,35 +23,35 @@
 			}
 
 			Console.WriteLine(sets.Max());
+
+			#endregion
+
+			#region 2
+
+			int[] numbers = { -5, 0, -2, 10, 1, 15, 25 };
+			int result = LongestAscendingSubsequence(numbers);
+			Console.WriteLine(result);
+
+			#endregion
 		}
-
-		private static void SolveProblemWithStoringTheNumbers()
+		static int LongestAscendingSubsequence(int[] nums)
 		{
-			var nums = new int[] { -5, 0, -2, -10, 1, 15, 25, 6 };
+			int n = nums.Length;
+			int[] lis = new int[n];
 
-			var sets = new List<List<int>> { new List<int> { nums[0] } };
-
-			for (int i = 1; i < nums.Length; i++)
+			for (int i = 0; i < n; i++)
 			{
-				var currentSet = new List<int> { nums[i] };
-
+				lis[i] = 1;
 				for (int j = 0; j < i; j++)
 				{
-					if (nums[j] < nums[i] && sets[j].Count + 1 > currentSet.Count)
+					if (nums[i] > nums[j] && lis[i] < lis[j] + 1)
 					{
-						currentSet.Clear();
-						currentSet.AddRange(sets[j]);
-						currentSet.Add(nums[i]);
+						lis[i] = lis[j] + 1;
 					}
 				}
-
-				sets.Add(new List<int>(currentSet));
 			}
 
-			var largestSet = sets.OrderByDescending(set => set.Count).First();
-
-			Console.WriteLine($"Length of the largest ordered ascending set: {largestSet.Count}");
-			Console.WriteLine("Numbers in the largest ordered ascending set: " + string.Join(", ", largestSet));
+			return lis.Max();
 		}
 	}
 }

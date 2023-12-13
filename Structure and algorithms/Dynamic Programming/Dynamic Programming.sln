@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coin problem", "Coin problem\Coin problem.csproj", "{626A79C9-7198-47F4-8291-87D6455B3BD5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knapsack", "Knapsack\Knapsack.csproj", "{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zero-One KnapSack", "Knapsack\Zero-One KnapSack.csproj", "{1F4B3CCD-9ED4-42D1-B779-A3A3D9B710CA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Intervals Scheduling", "Intervals Scheduling\Intervals Scheduling.csproj", "{7DDF2A42-508A-4873-BF71-3B9635595174}"
 EndProject
@@ -19,7 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "House painter", "House pain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multitudes", "Multitudes\Multitudes.csproj", "{6F7E043D-F933-4A2D-BCBF-8AF0D49F9C46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pedestrian matrix problem", "Pedestrian matrix problem\Pedestrian matrix problem.csproj", "{6ADF942B-15AC-486F-B7FD-8D092E170439}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pedestrian matrix problem", "Pedestrian matrix problem\Pedestrian matrix problem.csproj", "{6ADF942B-15AC-486F-B7FD-8D092E170439}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "00.Demo", "00.Demo\00.Demo.csproj", "{9FC8A31E-9A33-4CDB-9410-63F0751A7029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Square of 1", "Square of 1\Square of 1.csproj", "{5FEB2893-341A-4135-98EF-F4F571B1F766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pascal triangle", "Pascal triangle\Pascal triangle.csproj", "{1BD77421-87D3-49C6-9111-535152496CF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Equals subset", "Equals subset\Equals subset.csproj", "{B40FA6F8-A1FF-4BAE-AE9A-8D79E6DF86A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{6ADF942B-15AC-486F-B7FD-8D092E170439}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADF942B-15AC-486F-B7FD-8D092E170439}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADF942B-15AC-486F-B7FD-8D092E170439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC8A31E-9A33-4CDB-9410-63F0751A7029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC8A31E-9A33-4CDB-9410-63F0751A7029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC8A31E-9A33-4CDB-9410-63F0751A7029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC8A31E-9A33-4CDB-9410-63F0751A7029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEB2893-341A-4135-98EF-F4F571B1F766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEB2893-341A-4135-98EF-F4F571B1F766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEB2893-341A-4135-98EF-F4F571B1F766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEB2893-341A-4135-98EF-F4F571B1F766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BD77421-87D3-49C6-9111-535152496CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BD77421-87D3-49C6-9111-535152496CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BD77421-87D3-49C6-9111-535152496CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BD77421-87D3-49C6-9111-535152496CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B40FA6F8-A1FF-4BAE-AE9A-8D79E6DF86A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B40FA6F8-A1FF-4BAE-AE9A-8D79E6DF86A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B40FA6F8-A1FF-4BAE-AE9A-8D79E6DF86A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B40FA6F8-A1FF-4BAE-AE9A-8D79E6DF86A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

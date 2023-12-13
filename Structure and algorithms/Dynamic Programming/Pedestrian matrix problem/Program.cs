@@ -2,58 +2,50 @@
 {
 	internal class Program
 	{
-		public int Traverse(int row, int col)
+		static void Main(string[] args)
 		{
-			if (row == 0 && col == 0)
+			var matrix = new int[4, 4];
+
+			Console.WriteLine(TraverseDynamic(3, 3, matrix));
+		}
+
+		static int TraverseRecursive(int row, int col)
+		{
+			if (row == 0 || col == 0)
 				return 1;
 
 			int sum = 0;
-
-			sum += Traverse(row - 1, col);
-			sum += Traverse(row, col - 1);
+			sum += TraverseRecursive(row - 1, col);
+			sum += TraverseRecursive(row, col - 1);
 
 			return sum;
 		}
-		static void Main(string[] args)
+		static int TraverseDynamic(int row, int col, int[,] matrix)
 		{
-			int n = 3;
-
-			int[,] a =
+			if (row == 0 || col == 0)
 			{
-				{5,1,1 },
-				{7,2,2 },
-				{1,1,2 },
-				{2,1,3 }
-			};
-			int[,] b =
-			{
-				{6,5,1,1 },
-				{1,2,2,1 },
-				{1,1,1,1 }
-			};
-
-			int[,] opt = new int[n + 1, n + 1];
-
-			opt[0, 0] = 0;
-
-			for (int r = 1; r <= n; r++)
-			{
-				opt[0, r] = opt[0, r - 1] + a[0, r - 1];
-			}
-			for (int c = 1; c <= n; c++)
-			{
-				opt[c, 0] = opt[c - 1, 0] + b[c - 1, 0];
+				return 1;
 			}
 
-			for (int i = 1; i <= n; i++)
+			if (matrix[row - 1, col] != 0 && matrix[row, col - 1] == 0)
 			{
-				for (int j = 1; j <= n; j++)
-				{
-					opt[i, j] = Math.Min(opt[i, j - 1] + a[i, j - 1], opt[i - 1, j] + b[i - 1, j]);
-				}
+				matrix[row, col] = matrix[row - 1, col] + TraverseRecursive(row - 1, col);
+			}
+			else if (matrix[row - 1, col] == 0 && matrix[row, col - 1] != 0)
+			{
+				matrix[row, col] = matrix[row, col - 1] + TraverseRecursive(row - 1, col);
+			}
+			else if (matrix[row - 1, col] != 0 && matrix[row, col - 1] != 0)
+			{
+				matrix[row, col] = matrix[row - 1, col] + matrix[row, col - 1];
+			}
+			else
+			{
+				matrix[row, col] += TraverseRecursive(row - 1, col);
+				matrix[row, col] += TraverseRecursive(row, col - 1);
 			}
 
-			Console.WriteLine(opt[opt.GetLength(0) - 1, opt.GetLength(1) - 1]);
+			return matrix[matrix.GetLength(0) - 1, matrix.GetLength(1) - 1];
 		}
 	}
 }

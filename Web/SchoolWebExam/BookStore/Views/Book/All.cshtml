@@ -1,0 +1,57 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model BookStore.ViewModels.Book.BookAllViewModel
+@{
+	ViewBag.Title = "Books";
+}
+
+<header>
+	<h1 class="home-heading">@ViewBag.Title</h1>
+</header>
+
+<div class="container">
+	<a class="btn btn-primary mb-3" asp-area="" asp-controller="Book" asp-action="Add">Add Book</a>
+	<main>
+		<table class="table">
+			<thead style="background: #0f5132">
+				<tr>
+					<th scope="col">Title</th>
+					<th scope="col">Author</th>
+					<th scope="col">Publication Year</th>
+					<th scope="col">Publisher</th>
+					<th scope="col">Price</th>
+					<th scope="col">Action</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				@foreach (var b in Model.Books)
+				{
+					<tr>
+						<th scope="row">TestTitle</th>
+						<td scope="row">TestAuthor</td>
+						<td scope="row">TestYear</td>
+						<td scope="row">TestPublisher</td>
+						<td scope="row">TestPrice</td>
+						<td scope="row">
+							<a class="btn btn-warning" asp-area="" asp-controller="Book" asp-action="Edit" asp-route-id="@b.Id">Edit</a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</main>
+</div>
+
+<style>
+	.home-heading {
+		font-size: 45px;
+		color: white;
+		text-align: left;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+</style>
