@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree implementation", "Deep first search\Tree implementation.csproj", "{3E0A30A8-CC20-480E-B92F-8C4845956FAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree implementation", "Deep first search\Tree implementation.csproj", "{3E0A30A8-CC20-480E-B92F-8C4845956FAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KahnMehtodTopologySort", "..\..\..\..\Downloads\Graphs\Graphs\TopologicSort\KahnMehtodTopologySort\KahnMehtodTopologySort.csproj", "{7CB90132-F778-4FBE-8DB4-6643249F2CB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopologicSort", "..\..\..\..\Downloads\Graphs\Graphs\TopologicSort\TopologicSort\TopologicSort.csproj", "{CEB61D3C-2B96-4777-B1FC-5AB9F524D1DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DijkstraAlgorythm", "..\..\..\..\Downloads\Graphs\Graphs\DijkstraAlgorythm\DijkstraAlgorythm\DijkstraAlgorythm.csproj", "{9533DC0A-5804-482B-B0D1-0D0E1D29B3B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeExercises", "..\..\..\..\Downloads\Graphs\Graphs\TreeExercises\TreeExercises\TreeExercises.csproj", "{F8B2E7C9-5A8D-4B86-BDF7-BF2B45D40989}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreesAndGraphs", "..\..\..\..\Downloads\Graphs\Graphs\TreesAndGraphs\TreesAndGraphs\TreesAndGraphs.csproj", "{77048333-071A-4023-B497-70E1A3B2311A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KahnSort", "KahnSort\KahnSort.csproj", "{3DA883E7-6167-47BC-A615-AA0FA632315C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demos", "demos\demos.csproj", "{FFD1BD90-A828-4566-BC1F-CE2C4E64FF44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +29,34 @@ Global
 		{3E0A30A8-CC20-480E-B92F-8C4845956FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E0A30A8-CC20-480E-B92F-8C4845956FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E0A30A8-CC20-480E-B92F-8C4845956FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB90132-F778-4FBE-8DB4-6643249F2CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB90132-F778-4FBE-8DB4-6643249F2CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB90132-F778-4FBE-8DB4-6643249F2CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB90132-F778-4FBE-8DB4-6643249F2CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEB61D3C-2B96-4777-B1FC-5AB9F524D1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEB61D3C-2B96-4777-B1FC-5AB9F524D1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEB61D3C-2B96-4777-B1FC-5AB9F524D1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEB61D3C-2B96-4777-B1FC-5AB9F524D1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9533DC0A-5804-482B-B0D1-0D0E1D29B3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9533DC0A-5804-482B-B0D1-0D0E1D29B3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9533DC0A-5804-482B-B0D1-0D0E1D29B3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9533DC0A-5804-482B-B0D1-0D0E1D29B3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B2E7C9-5A8D-4B86-BDF7-BF2B45D40989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B2E7C9-5A8D-4B86-BDF7-BF2B45D40989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B2E7C9-5A8D-4B86-BDF7-BF2B45D40989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B2E7C9-5A8D-4B86-BDF7-BF2B45D40989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77048333-071A-4023-B497-70E1A3B2311A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77048333-071A-4023-B497-70E1A3B2311A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77048333-071A-4023-B497-70E1A3B2311A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77048333-071A-4023-B497-70E1A3B2311A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA883E7-6167-47BC-A615-AA0FA632315C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA883E7-6167-47BC-A615-AA0FA632315C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA883E7-6167-47BC-A615-AA0FA632315C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA883E7-6167-47BC-A615-AA0FA632315C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD1BD90-A828-4566-BC1F-CE2C4E64FF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD1BD90-A828-4566-BC1F-CE2C4E64FF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD1BD90-A828-4566-BC1F-CE2C4E64FF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD1BD90-A828-4566-BC1F-CE2C4E64FF44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

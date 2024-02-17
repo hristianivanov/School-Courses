@@ -26,21 +26,27 @@
 			vertex.color = "black";
 			Console.WriteLine(vertex.data);
 		}
-
-		public void TraverseViaBfs(Graph<T> vertex)
+		public void TraverseViaBfs(Graph<T> startVertex)
 		{
+			HashSet<Graph<T>> visited = new HashSet<Graph<T>>();
 			Queue<Graph<T>> queue = new Queue<Graph<T>>();
 
-			queue.Enqueue(vertex);
+			queue.Enqueue(startVertex);
+			visited.Add(startVertex);
 
 			while (queue.Count > 0)
 			{
-				Graph<T> temp = queue.Dequeue();
-				foreach (Graph<T> neighbor in temp.neighbors)
+				Graph<T> currentVertex = queue.Dequeue();
+				Console.WriteLine(currentVertex.data + " ");
+
+				foreach (Graph<T> neighbor in currentVertex.neighbors)
 				{
-					queue.Enqueue(neighbor);
+					if (!visited.Contains(neighbor))
+					{
+						queue.Enqueue(neighbor);
+						visited.Add(neighbor);
+					}
 				}
-				Console.WriteLine(temp.data + " ");
 			}
 		}
 	}

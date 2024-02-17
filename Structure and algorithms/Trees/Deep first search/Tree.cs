@@ -36,5 +36,25 @@
 				Console.WriteLine(temp.data + " ");
 			}
 		}
+
+		public bool BinarySearch(Tree<T>? root, T target)
+		{
+			if (root == null)
+				return false;
+
+			int isFound = Comparer<T>.Default.Compare(target, root.data);
+
+			if (isFound == 0)
+				return true;
+			else if (isFound < 0)
+				return BinarySearch(root.children.FirstOrDefault(), target);
+			else
+				return BinarySearch(root.children.LastOrDefault(), target);
+		}
+
+		public void Add(Tree<T> tree, T child)
+		{
+			
+		}
 	}
 }
