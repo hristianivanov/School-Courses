@@ -1,0 +1,15 @@
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\bin\Debug\net6.0\Floyd–Warshall-algorithm.exe
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\bin\Debug\net6.0\Floyd–Warshall-algorithm.deps.json
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\bin\Debug\net6.0\Floyd–Warshall-algorithm.runtimeconfig.json
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\bin\Debug\net6.0\Floyd–Warshall-algorithm.dll
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\bin\Debug\net6.0\Floyd–Warshall-algorithm.pdb
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.csproj.AssemblyReference.cache
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.AssemblyInfoInputs.cache
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.AssemblyInfo.cs
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.csproj.CoreCompileInputs.cache
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.dll
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\refint\Floyd–Warshall-algorithm.dll
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.pdb
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\Floyd–Warshall-algorithm.genruntimeconfig.cache
+D:\GitHub\School-Courses\Structure and algorithms\Floyd–Warshall-algorithm\Floyd–Warshall-algorithm\obj\Debug\net6.0\ref\Floyd–Warshall-algorithm.dll
