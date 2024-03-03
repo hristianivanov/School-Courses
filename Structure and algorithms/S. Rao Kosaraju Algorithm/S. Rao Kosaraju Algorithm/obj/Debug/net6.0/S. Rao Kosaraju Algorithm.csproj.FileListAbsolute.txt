@@ -1,0 +1,14 @@
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\bin\Debug\net6.0\S. Rao Kosaraju Algorithm.exe
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\bin\Debug\net6.0\S. Rao Kosaraju Algorithm.deps.json
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\bin\Debug\net6.0\S. Rao Kosaraju Algorithm.runtimeconfig.json
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\bin\Debug\net6.0\S. Rao Kosaraju Algorithm.dll
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\bin\Debug\net6.0\S. Rao Kosaraju Algorithm.pdb
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.GeneratedMSBuildEditorConfig.editorconfig
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.AssemblyInfoInputs.cache
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.AssemblyInfo.cs
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.csproj.CoreCompileInputs.cache
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.dll
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\refint\S. Rao Kosaraju Algorithm.dll
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.pdb
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\S. Rao Kosaraju Algorithm.genruntimeconfig.cache
+D:\pc\GitHub\School-Courses\Structure and algorithms\S. Rao Kosaraju Algorithm\S. Rao Kosaraju Algorithm\obj\Debug\net6.0\ref\S. Rao Kosaraju Algorithm.dll
